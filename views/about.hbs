@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/css/mystyles.css" />
+    <script src="/js/script.js" defer></script>
+  </head>
+  <body class="gradient">
+
+    {{>header}}
+
+    <div class="about_container">
+      <div>
+        <p class="about_title">{{title}}</p>
+        <ol>
+          <li class="about_text">Esta aplicación hace uso de la API de Weatherstack</li>
+          <li class="about_text">En primer lugar se debe elegir la ciudad de la que se desea saber el clima.</li>
+          <li class="about_text">Una vez que muestre el resultado, será posible seleccionar si se quiere por día, semana o mes.</li>
+        </ol>
+      </div>
+      <div>
+        <img class="about_img" src="img/weatherstack-forecast.gif" alt="">
+      </div>
+    </div>
+    
+    {{>footer}}
+
+  </body>
+</html>
